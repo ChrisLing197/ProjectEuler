@@ -1,0 +1,8 @@
+largest=0
+for a in range (999, 99, -1):
+  for b in range (999, 99, -1):
+    prod=str(a*b)
+    reversedprod=prod[::-1]
+    if (prod==reversedprod and int(prod)>largest):
+      largest=int(prod)
+print(largest)

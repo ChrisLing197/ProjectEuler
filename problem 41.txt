@@ -1,0 +1,17 @@
+from itertools import permutations
+def isprime(n):
+  for index in range(2,n):
+    if(n%index==0):
+      return False
+  return True
+  
+perms = [''.join(p) for p in permutations('1234567')]
+perms=sorted(perms)
+
+for terms in range(len(perms)-1,0,-1):
+  if(isprime(int(perms[terms]))):
+    
+    print(perms[terms])
+    break
+  
+# answer: 7652413

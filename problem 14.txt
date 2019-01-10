@@ -1,0 +1,22 @@
+def longestChain(length, term):
+  if(term==1):
+    return length
+  if(term%2==0):
+    return longestChain(length+1,term/2)
+  return longestChain(length+1,3*term+1)
+
+longest=0
+startnumber=0
+for index in range(100000,1000001):
+  x=longestChain(1,index)
+  if(x>longest):
+    longest=x
+    startnumber=index
+#1-999: 179
+#1000-9999: 262
+#10000-99999: 351
+#100000-1000000: 525
+print(longest)
+print(startnumber)
+
+#answer: 837799

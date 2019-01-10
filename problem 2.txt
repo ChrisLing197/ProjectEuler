@@ -1,0 +1,15 @@
+def fibanocci(n):
+  if n==1 or n==2:
+    return 1
+  return fibanocci(n-1)+fibanocci(n-2)
+sum=0
+x=1
+while (True):
+  index=fibanocci(x)
+  if(index<4000000 and index%2==0):
+    sum+=index
+  if(index>4000000):
+    break
+  x+=1
+  
+print(sum)

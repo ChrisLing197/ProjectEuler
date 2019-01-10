@@ -1,0 +1,14 @@
+moves=[[0 for i in range(21)] for j in range(21)]
+for x in range(0,21):
+  for y in range(0,21):
+    if(x==0 or y==0):
+      moves[x][y]=1
+    else:
+      moves[x][y]=moves[x-1][y]+moves[x][y-1]
+
+for index in range(0,21):
+  for index2 in range(0,21):
+    print(moves[index2][index],end="  ")
+  print()
+
+#answer: 137846528820

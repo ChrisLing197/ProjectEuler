@@ -1,0 +1,7 @@
+term=str(2**1000)
+sum=0
+for num in term:
+  sum+=int(num)
+print(sum)
+
+#answer=1366

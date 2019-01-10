@@ -1,0 +1,23 @@
+def decreasing(num):
+  for index in range(0,len(num)-1):
+    if(num[index]<num[index+1]):
+      return False
+  return True
+def increasing(num):
+  for index in range(0,len(num)-1):
+    if(num[index]>num[index+1]):
+      return False
+  return True
+
+bouncynums=0
+nums=100
+while(True):
+  if(not(increasing(str(nums))) and not(decreasing(str(nums)))):
+    bouncynums+=1
+  
+  if(bouncynums/nums==.99):
+    break
+  nums+=1
+print(nums)
+
+#answer: 1587000

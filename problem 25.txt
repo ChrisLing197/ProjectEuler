@@ -1,0 +1,13 @@
+term1=1
+term2=1
+index=3
+while(True):
+  next_term=term1+term2
+  if(len(str(next_term))==1000):
+    break
+  term1=term2
+  index+=1
+  term2=next_term
+print(index)
+
+#answer=4782

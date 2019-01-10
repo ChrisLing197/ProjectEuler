@@ -1,0 +1,10 @@
+for index in range(10**9,10**11,10):
+  num=str(index*index)
+  try:
+    if(num[0]=="1" and num[2]=="2" and num[4]=="3" and num[6]=="4" and num[8]=="5" and num[10]=="6" and num[12]=="7" and num[14]=="8" and num[16]=="9" and num[18]=="0"):
+      print(index)
+      break
+  except:
+    pass
+  
+#answer: 1389019170
